@@ -203,8 +203,8 @@ function(	_,
             // (33,999 / 1000) * 20
             // = 0.0339 * 20
             // = 0,639 pixels par delta
-            this.activerDefilementCiel(deltaInSeconds * 20);
-			this.activerDefilementSol(deltaInSeconds * 60);
+            this.activerDefilementCiel(deltaInSeconds * 20 * 4);
+			this.activerDefilementSol(deltaInSeconds * 60 * 4);
 
 			this.joueur.tick(evenement, deltaInSeconds);
 
