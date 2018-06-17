@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<!-- https://github.com/jkymarsh/flappyBirdClone -->
+<!-- https://github.com/namelivia/flappysonic -->
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Un clone de Flappy Bird</title>
+        <meta name="description" content="Un clone de Flappy Bird! par J. Ky Marsh">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="decoration/normalize.min.css">
+        <link rel="stylesheet" href="decoration/main.css">
+        <script>
+            // créer un espace de noms pour une poignée de variables globales spécifiques au jeu
+            var ENVIRONEMENT = {};
+        </script>
+        <script src="action/libs/require.js"></script>
+        <script src="action/libs/Son.js"></script>
+        <script src="action/config.js"></script>
+        <script src="action/main.js"></script>
+
+    </head>
+    <body>
+        <div id="media">
+            <img src="image/sol.png" id="sol">
+            <img src="image/ciel.png" id="ciel">
+            <img src="image/joueur.png" id="joueur">
+            <img src="image/joueur-mort.png" id="joueur-mort">
+            <img src="image/monstre-attaque.png" id="monstre-attaque">
+            <img src="image/monstre.png" id="monstre">
+            <audio src="son/03-marble-zone.mp3" id="marbleZoneSong" controls loop preload="auto" ></audio>
+            <audio src="son/vol.mp3" id="flap" controls preload="auto"></audio>
+            <audio src="son/ecrapou.mp3" id="crash" controls preload="auto"></audio>
+            <audio src="son/mort.mp3" id="die" controls preload="auto"></audio>
+        </div>
+
+        <!-- Le message dans la feuille de parchemin est dans le fichier main.css il faut chercher : #content -->
+        <div id="content" class="viewStack">
+            <canvas id="canvas-jeu" ></canvas>
+        </div>
+    </body>
+</html>
